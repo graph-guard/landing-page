@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+	<base href='/'/>
+
+	<title>GraphGuard Proxy</title>
+	<meta name='application-name' content='GraphGuard Proxy'/>
+
+	<meta name='color-scheme' content='light'/>
+
+	<meta name='theme-color' content='#009966'/>
+	<meta name='msapplication-TileColor' content='#009966'/>
+
+	<link rel='icon' type='image/png' sizes='16x16' href='app-icon/ico-16.png'/>
+	<link rel='icon' type='image/png' sizes='32x32' href='app-icon/ico-32.png'/>
+	<link rel='icon' type='image/png' sizes='64x64' href='app-icon/ico-64.png'/>
+	<link rel='icon' type='image/png' sizes='96x96' href='app-icon/ico-96.png'/>
+	<link rel='icon' type='image/png' sizes='128x128' href='app-icon/ico-128.png'/>
+	<link rel='icon' type='image/png' sizes='196x196' href='app-icon/ico-196.png'/>
+
+	<link rel='stylesheet' href='style.css'/>
+</head>
+<body>
+	<header>
+		<img src='ico.svg' alt='Logo'>
+		<div class='name'>
+			<span>GraphGuard Proxy</span>
+			<span class='label'>Beta</span>
+		</div>
+	</header>
+	<main>
+		<svg class='background-logo' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'>
+			<g stroke='#009966' stroke-width='0.1' opacity='0.15'>
+				<path d='M24.1422 3.42267C24.1683 3.61138 24.1818 3.8041 24.1818 3.99997C24.1818 5.14784 23.7193 6.18768 22.9705 6.94334L32.0066 22.5055C32.3524 22.413 32.7159 22.3636 33.0909 22.3636C33.6426 22.3636 34.1694 22.4705 34.6517 22.6646C36.7331 17.882 37.8181 12.3976 37.8181 7.3198C33.6031 4.88627 28.9475 3.78961 24.1422 3.42267Z'/>
+				<path d='M30.4303 29.7719C27.5946 33.4592 24.0546 36.5681 19.9999 38.9091C15.9453 36.5681 12.4053 33.4592 9.56954 29.7719C10.2287 29.2278 10.7183 28.4855 10.9471 27.6363H29.0528C29.2816 28.4855 29.7712 29.2278 30.4303 29.7719Z'/>
+				<path d='M5.34819 22.6646C3.26674 17.882 2.18176 12.3976 2.18176 7.3198C6.39675 4.88627 11.0523 3.78961 15.8577 3.42267C15.8316 3.61138 15.8181 3.8041 15.8181 3.99997C15.8181 5.14785 16.2806 6.18771 17.0294 6.94337L7.99331 22.5055C7.64751 22.413 7.28404 22.3636 6.90904 22.3636C6.35727 22.3636 5.83047 22.4705 5.34819 22.6646Z'/>
+				<path d='M18.9157 8.03986L9.87958 23.602C10.3822 24.1093 10.7558 24.7445 10.9471 25.4545H29.0528C29.2441 24.7445 29.6177 24.1092 30.1203 23.602L21.0842 8.03985C20.7384 8.13243 20.375 8.18179 19.9999 8.18179C19.625 8.18179 19.2615 8.13243 18.9157 8.03986Z'/>
+				<path fill-rule='evenodd' clip-rule='evenodd' d='M33.0909 28C33.8942 28 34.5454 27.3488 34.5454 26.5454C34.5454 25.7421 33.8942 25.0909 33.0909 25.0909C32.2875 25.0909 31.6363 25.7421 31.6363 26.5454C31.6363 27.3488 32.2875 28 33.0909 28ZM33.0909 29.4545C34.6975 29.4545 35.9999 28.1521 35.9999 26.5454C35.9999 24.9388 34.6975 23.6363 33.0909 23.6363C31.4842 23.6363 30.1818 24.9388 30.1818 26.5454C30.1818 28.1521 31.4842 29.4545 33.0909 29.4545Z'/>
+				<path fill-rule='evenodd' clip-rule='evenodd' d='M19.9999 5.45452C20.8033 5.45452 21.4545 4.8033 21.4545 3.99997C21.4545 3.19665 20.8033 2.54543 19.9999 2.54543C19.1966 2.54543 18.5454 3.19665 18.5454 3.99997C18.5454 4.8033 19.1966 5.45452 19.9999 5.45452ZM19.9999 6.90906C21.6066 6.90906 22.909 5.60662 22.909 3.99997C22.909 2.39333 21.6066 1.09088 19.9999 1.09088C18.3933 1.09088 17.0909 2.39333 17.0909 3.99997C17.0909 5.60662 18.3933 6.90906 19.9999 6.90906Z'/>
+				<path fill-rule='evenodd' clip-rule='evenodd' d='M6.90904 28C7.71236 28 8.36358 27.3488 8.36358 26.5454C8.36358 25.7421 7.71236 25.0909 6.90904 25.0909C6.10571 25.0909 5.45449 25.7421 5.45449 26.5454C5.45449 27.3488 6.10571 28 6.90904 28ZM6.90904 29.4545C8.51568 29.4545 9.81813 28.1521 9.81813 26.5454C9.81813 24.9388 8.51568 23.6363 6.90904 23.6363C5.30239 23.6363 3.99994 24.9388 3.99994 26.5454C3.99994 28.1521 5.30239 29.4545 6.90904 29.4545Z'/>
+			</g>
+		</svg>
+		<div class='centered'>
+			<h1>
+				<span>Protect your</span>
+				<span class='highlight'>GraphQL API</span>
+			</h1>
+			<p>ggproxy is a high-performance GraphQL proxy server that filters queries according to a list of templates effectively <b>protecting</b> your GraphQL <b>API from DoS attacks.</b></p>
+			<div class='actions'>
+				<a href='https://docs.graphguard.io' class='link-docs'>
+					<svg class='icon' viewBox='0 0 40 40' fill='none' aria-hidden='true' focusable='false' role='presentation' xmlns='http://www.w3.org/2000/svg'>
+						<g stroke='#fff' stroke-width='2'>
+							<path d='M23.33 3.33H8.67a2 2 0 0 0-2 2v29.34c0 1.1.9 2 2 2h22.66a2 2 0 0 0 2-2V13.33m-10-10 10 10m-10-10v8c0 1.1.9 2 2 2h8'/>
+							<path d='M28 21H12m16 7H12'/>
+						</g>
+					</svg>
+					<span>Documentation</span>
+				</a>
+				<a href='https://github.com/graph-guard/ggproxy-releases' class='link-download'>
+					<svg class='icon' viewBox='0 0 40 40' fill='none' aria-hidden='true' focusable='false' role='presentation' xmlns='http://www.w3.org/2000/svg'>
+						<g stroke='#fff' stroke-width='3'>
+							<path d='m13 18 7 7 7-7M20 25V9M15 30h10'/>
+							<circle cx='20' cy='20' r='17'/>
+						</g>
+					</svg>
+					<span>Download Beta</span>
+				</a>
+			</div>
+			<div class='social-links'>
+				<a href='https://t.me/graphguard' class='social-telegram'>
+					<svg class='icon' viewBox='0 0 40 40' fill='none' aria-hidden='true' focusable='false' role='presentation' xmlns='http://www.w3.org/2000/svg'>
+						<path fill='#000' fill-rule='evenodd' clip-rule='evenodd' d='M20 40C31.05 40 40 31.05 40 20C40 8.95 31.05 0 20 0C8.95 0 0 8.95 0 20C0 31.05 8.95 40 20 40ZM25.9666 15.7167L16.6679 24.0677L16.3335 29V29.1667C16.8055 29.1667 17.025 28.9588 17.2864 28.7112L17.3335 28.6667C17.5122 28.4949 18.5634 27.4732 19.7373 26.3317L24.7332 30.0167C25.6499 30.5167 26.3166 30.2667 26.5499 29.1667L29.8332 13.7C30.1666 12.35 29.3166 11.75 28.4332 12.15L9.16656 19.5834C7.8499 20.1167 7.86656 20.85 8.93323 21.1667L13.8832 22.7167L25.3332 15.5C25.8666 15.1667 26.3666 15.35 25.9666 15.7167Z'/>
+					</svg>
+					<span>Telegram</span>
+				</a>
+				<a href='https://github.com/graph-guard' class='social-github'>
+					<svg class='icon' viewBox='0 0 40 40' fill='none' aria-hidden='true' focusable='false' role='presentation' xmlns='http://www.w3.org/2000/svg'>
+						<path fill='#000' fill-rule='evenodd' clip-rule='evenodd' d='M20 .42a20 20 0 0 0-6.32 38.98c1 .18 1.36-.43 1.36-.96l-.02-3.73c-5.57 1.21-6.74-2.36-6.74-2.36-.91-2.3-2.22-2.92-2.22-2.92-1.82-1.24.13-1.22.13-1.22 2.01.14 3.07 2.06 3.07 2.06 1.78 3.06 4.68 2.18 5.82 1.66.18-1.29.7-2.17 1.27-2.67-4.44-.5-9.11-2.22-9.11-9.88 0-2.19.78-3.97 2.06-5.37-.2-.5-.9-2.54.2-5.3 0 0 1.67-.53 5.5 2.06a19.17 19.17 0 0 1 10.01 0c3.82-2.6 5.5-2.05 5.5-2.05 1.08 2.75.4 4.78.2 5.29a7.73 7.73 0 0 1 2.05 5.37c0 7.68-4.68 9.37-9.13 9.86.71.63 1.35 1.84 1.35 3.7l-.02 5.5c0 .53.36 1.15 1.37.96A20 20 0 0 0 20 .42Z'/>
+						<path fill='#000' d='M7.58 29.14c-.05.1-.2.13-.35.06-.14-.07-.22-.2-.18-.3.05-.1.2-.13.35-.07.14.07.23.2.18.3ZM8.38 30.04c-.09.09-.28.05-.4-.1-.13-.13-.16-.32-.06-.4.1-.1.28-.05.4.08.14.15.16.33.06.42ZM9.17 31.2c-.12.08-.32 0-.44-.18-.13-.18-.13-.4 0-.48.12-.08.32 0 .45.17.12.18.12.4 0 .48ZM10.25 32.3c-.1.13-.34.1-.51-.07-.17-.16-.22-.4-.11-.51.1-.12.34-.09.51.07.18.16.23.4.11.51ZM11.74 32.95c-.04.16-.27.23-.5.16-.22-.07-.37-.25-.32-.4.04-.17.27-.24.5-.17.22.07.37.25.32.41ZM13.38 33.07c0 .17-.19.3-.42.3-.24.01-.44-.12-.44-.28 0-.17.19-.3.43-.31.24 0 .43.13.43.3ZM14.9 32.81c.03.16-.13.33-.37.37-.23.04-.45-.06-.48-.21-.02-.17.14-.34.38-.38.23-.04.44.06.47.22Z'/>
+					</svg>
+					<span>GitHub</span>
+				</a>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<span class='cpr'>&copy; GraphGuard</span>
+		<span class='cpr-year'>2022</span>
+	</footer>
+</body>
+</html>

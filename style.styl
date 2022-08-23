@@ -1,0 +1,207 @@
+:root
+	background-color: #fff
+	color: #000
+	font-weight: 400
+	font-family: 'Inter'
+	--clr-accent: #009966
+
+@font-face
+	font-family: 'Fira Code'
+	src: url('fira_code.woff2') format('woff2-variations'), url('fira_code.woff') format('woff-variations')
+	font-weight: 300 700
+	font-style: normal
+
+@font-face
+	font-family: 'Inter'
+	src: url('font_inter.ttf') format('truetype-variations')
+	font-weight: 100 900
+	font-style: normal
+
+main, header, article, footer, nav, div, input,
+button, textarea, svg, svg > *, span, a, p, small, form,
+q, b, i, label, section, h1, h2, h3, h4, h5, h6, img, ul, li,
+dl, dt, dd, select, optgroup, pre, code
+	margin: 0
+	padding: 0
+	background: none
+	border: none
+	color: inherit
+	outline: none
+	box-sizing: border-box
+	&:before, &:after
+		margin: 0
+		padding: 0
+		background: none
+		border: none
+		color: inherit
+		outline: none
+		box-sizing: border-box
+
+html, body
+	width: 100%
+	height: 100%
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	border: none
+	outline: none
+	background: var(--page-bg)
+	accent-color: var(--clr-accent)
+	overscroll-behavior: none
+
+.icon
+	width: 1em
+	height: 1em
+
+body
+	display: grid
+	grid-template-columns: 1fr
+	grid-template-rows: auto 1fr auto
+	overflow-x: hidden
+
+header
+	display: flex
+	padding: 2rem
+	padding-bottom: 0.5rem
+	align-content: center
+	align-items: center
+	gap: 1rem
+	> img
+		width: 3rem
+		height: 3rem
+	> .name
+		> .label
+			display: block
+			margin-top: 0.2rem
+			font-weight: 700
+			font-size: 0.75em
+			text-transform: uppercase
+			font-family: 'Fira Code'
+
+main
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-content: center
+	align-items: center
+	> .background-logo
+		z-index: -1
+		position: absolute
+		right: 0
+		width: 65vw
+		max-height: 100%
+		pointer-events: none
+	> .centered
+		width: 80%
+		margin-left: 10rem
+		display: grid
+		> h1
+			font-size: 3.75rem
+			font-weight: 500
+			line-height: 1.1
+			> span
+				display: block
+			> .highlight
+				display: inline-block
+				background: linear-gradient(90deg, #5fcb98, #499e71)
+				background-clip: text
+				text-fill-color: transparent
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+		> p
+			line-height: 1.35
+			margin: 1rem 0
+			max-width: 35ch
+			font-size: 1rem
+		> .actions, > .social-links
+			display: flex
+			text-transform: uppercase
+			font-family: 'Fira Code'
+		> .actions
+			margin-bottom: 1.5rem
+			gap: 1rem
+			> a
+				display: flex
+				align-items: center
+				gap: 0.5rem
+				padding: 0.75rem 1.5rem
+				border-radius: 2rem
+				background-color: #000
+				color: #fff
+				line-height: 1
+				font-size: 0.75rem
+				text-decoration: none
+				transition: ease-in-out 150ms
+				transition-property: transform, box-shadow
+				> .icon
+					width: 1.5em
+					height: 1.5em
+				&.link-docs:hover
+					background-color: #333
+				&.link-download
+					background: linear-gradient(90deg, #5fcb98, #499e71)
+					text-shadow: 0 0 2px rgba(#000, 0.25)
+					box-shadow: none
+					&:hover
+						transform: scale(1.05)
+						box-shadow: 0 2px 8px rgba(#499e71, 0.35)
+		> .social-links
+			gap: 1.5rem
+			> a
+				display: flex
+				align-items: center
+				gap: 0.5rem
+				line-height: 1
+				&:not(:hover)
+					opacity: 0.4
+					text-decoration: none
+
+footer
+	display: flex
+	padding: 2rem
+	padding-top: 0.5rem
+	justify-content: space-between
+	color: #d3d3d3
+	text-transform: uppercase
+	font-family: 'Fira Code'
+
+@media (max-width: 1200px)
+	main
+		> .centered
+			margin-left: 10vw
+
+@media (max-width: 750px)
+	:root
+		font-size: 100%
+	footer
+		padding: 1rem
+	header
+		display: grid
+		justify-content: center
+		justify-items: center
+		text-align: center
+		> img
+			width: 6rem
+			height: 6rem
+	footer
+		padding-top: 0.5rem
+	main
+		align-items: flex-start
+		align-content: flex-start
+	main > .background-logo
+		display: none
+	main > .centered
+		width: 100%
+		margin: 0
+		padding: 1rem
+		text-align: center
+		> h1
+			font-size: 3rem
+			width: 100%
+		> p
+			width: 100%
+			margin: 2rem auto
+		> .actions, > .social-links
+			justify-content: center
+		> .actions > a
+			padding: 0.75rem 1rem
