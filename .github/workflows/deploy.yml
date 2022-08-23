@@ -14,10 +14,10 @@ jobs:
         with:
           node-version: 16
       - run: npm i -g stylus
-      - run: stylus -c style.styl
+      - run: stylus -c style.styl -o ./style.css
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          cname: graphguard.io
+          cname: www.graphguard.io
           publish_dir: .
