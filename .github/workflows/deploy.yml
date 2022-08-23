@@ -13,11 +13,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: yarn
       - run: npm i -g stylus
-
       - run: stylus -c style.styl
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
