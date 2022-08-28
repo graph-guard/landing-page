@@ -13,8 +13,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm i -g stylus
-      - run: stylus -c style.styl -o ./public/style.css
+      - run: npm i -g sass
+      - run: sass --style=compressed --no-source-map --stop-on-error style.sass:public/style.css
       # Remove ignore for gh-pages to avoid ignoring public/style.css
       - run: rm .gitignore
       - name: Deploy
